@@ -48,10 +48,22 @@ nav[2].textContent = siteContent["nav"]["nav-item-3"];
 nav[3].textContent = siteContent["nav"]["nav-item-4"];
 nav[4].textContent = siteContent["nav"]["nav-item-5"];
 nav[5].textContent = siteContent["nav"]["nav-item-6"];
-//nav.appendChild(document.createElement(p)) = 'Smoot';
 nav.forEach(x => {
   x.style.color = "green"
 });
+
+const nav2 = document.querySelector('nav');
+
+const newNav = document.createElement('a');
+newNav.textContent = 'Smoot';
+newNav.style.color = "green";
+
+const newNav2 = document.createElement('a');
+newNav2.textContent = 'Joshua';
+newNav2.style.color = "green";
+
+nav2.append(newNav);
+nav2.append(newNav2);
 
 const cta = document.querySelector('.cta-text h1');
 cta.textContent = siteContent["cta"]["h1"];
